@@ -17,11 +17,18 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  color: #F0EEED;
+  background: #332C39;
+  font-family: 'Exo 2';
+}
+
+a {
+ transition: 0.25s; 
+}
+a:hover {
+  color: #C92C6D;
+}
+
+#menu-list{
+  padding-bottom: 1rem;
 }
