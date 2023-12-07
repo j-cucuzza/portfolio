@@ -9,9 +9,24 @@ export default function Nav() {
   }
 
   const useCurrentPath = (path: string) => {
-    return usePathname() === path ? {color: '#609EA2', pointerEvents: 'none'} : {}
+    return usePathname() === path ? {color: '#609EA2'} : {}
   }
-  return (<header>
+
+  const usePageOptions = () => {
+    if (usePathname() === '/') {
+      return (<>
+        <li>
+          <a className="md:p-4 py-2 block" href="#about">About</a>
+        </li>
+        <hr />
+        <li>
+          <a className="md:p-4 py-2 block" href="#skills">Skills</a>
+        </li>
+        <hr />
+      </>)
+    }
+  }
+  return (<header id="nav-header">
     <nav
        className="
          flex flex-wrap
@@ -39,21 +54,24 @@ export default function Nav() {
           >
             <li>
               <a className="md:p-4 py-2 block" style={useCurrentPath('/')}  href="/"
-                >About</a
+                >Home</a
               >
             </li>
+            <hr />
+            {usePageOptions()}
             <li>
               <a className="md:p-4 py-2 block" style={useCurrentPath('/projects')} href="/projects"
                 >Projects</a
               >
             </li>
+            <hr />
             <li>
               <a className="md:p-4 py-2 block" href="/blog"
                 >Blog(?)</a
               >
             </li>
+            <hr />
           </ul>
-          <hr />
         </div>
    </nav>
  </header>)
