@@ -38,20 +38,20 @@ export default function Home() {
             <ul>
               <li>TypeScript (and JavaScript)
               <ul>
-              <li>React</li>
-              <li>Angular</li>
-              <li>Vue</li>
+                <li>- React</li>
+                <li>- Angular</li>
+                <li>- Vue</li>
               </ul>
               </li>
               <li>Python
                 <ul>
-                  <li>Django</li>
-                  <li>FastAPI</li>
+                  <li>- Django</li>
+                  <li>- FastAPI</li>
                 </ul>
               </li>
               <li>Java
                 <ul>
-                  <li>Spring Boot</li>
+                  <li>- Spring Boot</li>
                 </ul>
               </li>
 
@@ -66,14 +66,14 @@ export default function Home() {
               <li>C/C++</li>
               <li>C#
                 <ul>
-                  <li>Godot</li>
-                  <li>Unity</li>
+                  <li>- Godot</li>
+                  <li>- Unity</li>
                 </ul>
               </li>
               <li>SQL
                 <ul>
-                  <li>MySQL</li>
-                  <li>PostgreSQL</li>
+                  <li>- MySQL</li>
+                  <li>- PostgreSQL</li>
                 </ul>
               </li>
               <li>R</li>

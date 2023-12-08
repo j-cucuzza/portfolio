@@ -77,9 +77,15 @@ p a:hover {
 }
 
 .content-section  {
-  height: 100vh
+  min-height: 70vh
 }
 
+#intro {
+  margin: 3rem;
+}
+#about {
+  margin-bottom: 3rem;
+}
 #about p {
   width: 80%;
   margin: auto;
@@ -115,21 +121,22 @@ p a:hover {
 }
 
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 1000px) {
   .main-content {
     width: 90%;
   }
 
   .content-section {
-    height: 80vh;
+    min-height: 90vh;
   }
 
   #about p {
     width: 100%;
   }
-
+  #skills {
+    margin-bottom: 10rem;
+  }
   #footer {
-    position: inherit;
     text-align: center;
     justify-content: center;
     align-items: center;
