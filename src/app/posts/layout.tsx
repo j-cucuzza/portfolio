@@ -1,5 +1,5 @@
 
-export default function BlogLayout({
+export default function PostsLayout({
   children,
 }: {
   children: React.ReactNode

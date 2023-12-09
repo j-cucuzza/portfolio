@@ -86,7 +86,7 @@ p a:hover {
 #about {
   margin-bottom: 3rem;
 }
-#about p {
+.main-content p {
   width: 80%;
   margin: auto;
   text-align:justify;
@@ -120,6 +120,38 @@ p a:hover {
   padding-left: 3rem;
 }
 
+.loading {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  padding: 5rem;
+}
+.project-cards {
+  display: grid;
+  justify-content: center;
+  margin: auto;
+  margin-bottom: 5rem;
+}
+.project-card {
+  background-color: #2F2638;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  padding: 1rem 0 1rem 0;
+  margin: 1rem 0 1rem 0;
+  width: 35vw;
+  min-height: 5rem;
+}
+.owner-info{
+  padding-left: 45px;
+  padding-bottom: 15px;
+}
+.project-card p {
+  text-align: left;
+}
+
+.project-content {
+  padding-bottom: 1rem;
+}
 
 @media only screen and (max-width: 1000px) {
   .main-content {
@@ -149,4 +181,15 @@ p a:hover {
     margin-bottom: 20px;
   }
 
+  .project-cards {
+    margin-bottom: 10rem;
+  }
+  .project-card {
+    width: 90vw;
+  }
+
+  .owner-info{
+    padding-left: 30px;
+    padding-bottom: 10px;
+  }
 }

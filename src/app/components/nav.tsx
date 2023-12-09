@@ -4,28 +4,16 @@ import React, { useState } from 'react'
 
 export default function Nav() {
   const [menuOpen, setMenuOpen] = useState(false)
+
   const toggleMenu = () => {
     setMenuOpen(!menuOpen)
   }
 
+  // update link color on navbar if you're already there!
   const useCurrentPath = (path: string) => {
     return usePathname() === path ? {color: '#609EA2'} : {}
   }
 
-  const usePageOptions = () => {
-    if (usePathname() === '/') {
-      return (<>
-        <li>
-          <a className="md:p-4 py-2 block" href="#about">About</a>
-        </li>
-        <hr />
-        <li>
-          <a className="md:p-4 py-2 block" href="#skills">Skills</a>
-        </li>
-        <hr />
-      </>)
-    }
-  }
   return (<header id="nav-header">
     <nav
        className="
@@ -58,7 +46,14 @@ export default function Nav() {
               >
             </li>
             <hr />
-            {usePageOptions()}
+            <li>
+              <a className="md:p-4 py-2 block" style={useCurrentPath('/#about')} href="/#about">About</a>
+            </li>
+            <hr />
+            <li>
+              <a className="md:p-4 py-2 block" style={useCurrentPath('/#skills')} href="/#skills">Skills</a>
+            </li>
+            <hr />
             <li>
               <a className="md:p-4 py-2 block" style={useCurrentPath('/projects')} href="/projects"
                 >Projects</a
@@ -66,9 +61,8 @@ export default function Nav() {
             </li>
             <hr />
             <li>
-              <a className="md:p-4 py-2 block" href="/blog"
-                >Blog(?)</a
-              >
+              <a className="md:p-4 py-2 block" href="/posts" style={{pointerEvents: "none", color: "gray"}}
+                >Posts</a>
             </li>
             <hr />
           </ul>
