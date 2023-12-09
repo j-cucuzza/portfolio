@@ -31,7 +31,7 @@ export default function Nav() {
         <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
       </svg>
       </button>
-      <div className={"w-full md:flex md:items-center md:w-auto " + (menuOpen ? 'hidden' : '')}  id="menu">
+      <div className={"w-full md:flex md:items-center md:w-auto " + (menuOpen ? '' : 'hidden')}  id="menu">
           <ul id="menu-list"
             className="
               text-xl
@@ -55,7 +55,7 @@ export default function Nav() {
             </li>
             <hr />
             <li>
-              <a className="md:p-4 py-2 block" style={useCurrentPath('/projects')} href="/projects"
+              <a className="md:p-4 py-2 block" style={useCurrentPath('/projects')} href="/projects.html"
                 >Projects</a
               >
             </li>

@@ -14,7 +14,7 @@ export default function ProjectCard({repo, key}: Props) {
     <div className="project-content">
       <p className="text-3xl pb-2"><a href={repo.url}>{convertString(repo.name)}</a></p>
       <div className="text-xl flex justify-start owner-info">
-        <Image src={repo.avatar_url} alt="owner avatar"width={32} height={32}/>|
+        <Image unoptimized src={repo.avatar_url} alt="owner avatar"width={32} height={32}/>|
         <hr />
         <p>{repo.owner}</p>
       </div>

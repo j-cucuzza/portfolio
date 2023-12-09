@@ -4,18 +4,18 @@ export default function Home() {
   return (
   <div className="main-content">
     <section id="intro" className="content-section">
-      <Image src="/prof_pic.jpg" alt="Justin Cucuzza's headshot" width="300" height="300"/>
+      <Image unoptimized src="/static/prof_pic.jpg" alt="Justin Cucuzza's headshot" width="300" height="300"/>
       <h1 className="text-4xl">Junior Full-Stack Developer</h1>
       <h2 className="text-2xl">(Frontend Focus)</h2>
     </section>
 
     <section id="about" className="content-section">
       <h1 className="text-4xl">About Me</h1>
-      <p className="text-xl">I'm a Full-Stack Developer with a focus on 
+      <p className="text-xl">I&apos;m a Full-Stack Developer with a focus on 
         Frontend Development. I have obtained a B.S. in Computer Science, 
         with an Emphasis in Data Science, and a Minor in Mathematics. Most of 
-        the work I've done has been developing web applications using React, 
-        Angular, and Vue, with TypeScript and JavaScript. I've also created 
+        the work I&apos;ve done has been developing web applications using React, 
+        Angular, and Vue, with TypeScript and JavaScript. I&apos;ve also created 
         Backend RESTful API services using Python with Django and FastAPI. 
       </p>
       <br />
@@ -23,7 +23,7 @@ export default function Home() {
         Software Developer for KPMG - focusing on Frontend development using
         Typescript. I have also worked as an Application Development Services
         Intern for International Paper working with JavaScript. You can 
-        <a href="/Cucuzza_Justin_Resume_11-23.pdf" target="_blank"> read my 
+        <a href="/static/Cucuzza_Justin_Resume_11-23.pdf" target="_blank"> read my 
         full resume here</a>
       </p>
     </section>
